@@ -17,5 +17,6 @@ public class TestTagDAO {
 				Tag t = tagList.get(i);
 				System.out.println(t);
 		}
+		
 	}
 }
