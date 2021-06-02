@@ -59,7 +59,7 @@ INSERT INTO books VALUES (
 /*
  Create the book_tags table. We need a foreign key to reference books table. Additionally, this table has a composite key with its two columns to maintain normalization. It will also disallow multiples of the same tag to be added to a specific book.
 */
-CREATE TABLE BOOK_TAGS(
+CREATE TABLE BOOK_TAGS (
 	tag_name varchar,
 	isbn_13 varchar(13) NOT NULL,
 	PRIMARY KEY (isbn_13, tag_name),
@@ -67,22 +67,22 @@ CREATE TABLE BOOK_TAGS(
 );
 	
 -- Populating the book_tags again with a few entries.
-INSERT INTO book_tags VALUES(
+INSERT INTO book_tags VALUES (
 	'dragons',
 	'1111111111111'
 );
 
-INSERT INTO book_tags VALUES(
+INSERT INTO book_tags VALUES (
 	'dancing',
 	'1111111111112'
 );
 
-INSERT INTO book_tags VALUES(
+INSERT INTO book_tags VALUES (
 	'boxing',
 	'1111111111113'
 );
 
-INSERT INTO book_tags VALUES(
+INSERT INTO book_tags VALUES (
 	'outer space',
 	'1111111111115'
 );
